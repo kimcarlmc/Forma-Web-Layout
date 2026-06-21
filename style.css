@@ -332,7 +332,7 @@ header,
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
-    margin-top: 10rem;
+    margin-top: 13rem;
     text-align: left;
 }
 
@@ -403,6 +403,111 @@ header,
     font-size: 0.90rem;
     color: #636167;
     line-height: 1.6;
+}
+
+.testimonials{
+    align-items: center;
+}
+
+.testimonials-header{
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+}
+
+.stars{
+    color: #c8a96e;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-heading{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: #f2f0eb;
+}
+
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.testimonial-card{
+    width: 22rem;
+    background-color: #1a1917;
+    border: 1px solid #2e2d2b;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-card:hover{
+    border-color: #3a3833;
+}
+
+.testimonial-quote{
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    color: #c9c7c4;
+    line-height: 1.7rem;   
+}
+
+.testimonial-author{
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.author-avatar{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.60rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+#author-AV{
+    color: #845ad2;
+    border: 1px solid;
+    border-color: #6d4aad;
+}
+
+#author-MC{
+    color: #49c5b2;
+    border: 1px solid;
+    border-color: #2d7a6e;
+}
+
+#author-SO{
+    color: #d3a32a;
+    border: 1px solid;
+    border-color: #8a6a1a;
+}
+
+.author-info h4{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #f2f0eb;
+}
+
+.author-info span{
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #636167;
 }
 
 
