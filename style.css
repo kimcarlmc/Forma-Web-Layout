@@ -832,6 +832,7 @@ header,
 }
 
 .footer-container{
+    margin-top: 5rem;
     padding: 1.2rem 4%;
     background-color:#131210;
     border-top: 0.1rem solid #3d3c4029;
@@ -864,7 +865,6 @@ header,
 .footer-links a:hover{
     color:#dbd8df
 }
-
 
 .site-footer .logo{
     font-size: 1.1rem;
