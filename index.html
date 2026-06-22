@@ -15,11 +15,15 @@
     <header>
         <a href="#" class="logo">FORMA</a>
 
-        <nav>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="primary-navigation">
             <a href="#features">Features</a>
             <a href="#workflow">Workflow</a>
             <a href="#testimonials">Testimonials</a>
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
         </nav>
 
         <div class="header-action">
@@ -52,131 +56,246 @@
             </div>
 
             <section class="features" id="features"></section>
-                <div class="features-tab">
-                    <h6 class="features-title">CORE FEATURES</h6>
-                    <h2 class="features-heading">Everything a spatial designer needs</h2>
-                </div>
+            <div class="features-tab">
+                <h6 class="features-title">CORE FEATURES</h6>
+                <h2 class="features-heading">Everything a spatial designer needs</h2>
+            </div>
 
-                <div class="features-content">
-                    <div class="real-time">
-                        <i class="fa-solid fa-cube"></i>
-                        <h4>Real-time 3D editing</h4>
-                        <p>Manipulate geometry, materials, and lighting collaboratively with zero latency — like Figma,
-                            but for spatial design.</p>
-                    </div>
-                    <div class="components">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <h4>Components system</h4>
-                        <p>Build a shared library of 3D primitives and complex assemblies. Push updates across every
-                            prototype instantly.</p>
-                    </div>
-                    <div class="physics">
-                        <i class="fa-solid fa-bolt"></i>
-                        <h4>Physics & constraints</h4>
-                        <p>Add weight, gravity, and articulation to your prototypes so interactions feel physically true
-                            from day one.</p>
-                    </div>
-                    <div class="team-workspace">
-                        <i class="fa-solid fa-people-group"></i>
-                        <h4>Team workspaces</h4>
-                        <p>Multiplayer cursors, comments, version history, and granular permissions baked into every
-                            workspace.</p>
-                    </div>
+            <div class="features-content">
+                <div class="real-time">
+                    <i class="fa-solid fa-cube"></i>
+                    <h4>Real-time 3D editing</h4>
+                    <p>Manipulate geometry, materials, and lighting collaboratively with zero latency — like Figma,
+                        but for spatial design.</p>
                 </div>
+                <div class="components">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h4>Components system</h4>
+                    <p>Build a shared library of 3D primitives and complex assemblies. Push updates across every
+                        prototype instantly.</p>
+                </div>
+                <div class="physics">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4>Physics & constraints</h4>
+                    <p>Add weight, gravity, and articulation to your prototypes so interactions feel physically true
+                        from day one.</p>
+                </div>
+                <div class="team-workspace">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h4>Team workspaces</h4>
+                    <p>Multiplayer cursors, comments, version history, and granular permissions baked into every
+                        workspace.</p>
+                </div>
+            </div>
 
             <section class="workflow" id="workflow"></section>
-                <div class="workflow-page">
-                    <div class="workflow-tab">
-                        <h6 class="workflow-title">HOW IT WORKS</h6>
-                        <h2 class="workflow-heading">From concept to prototype in four steps</h2>
-                        <p>Forma removes the gap between ideation and execution. No handoff, no lost context, no
-                            separate tools — one continuous workflow for the whole team.</p>
-                    </div>
-
-                    <div class="workflow-content">
-                        <ol class="padded-list">
-                            <li>
-                                <h4>Import or start fresh</h4>
-                                <p>Bring in CAD files, glTF models, or begin with Forma's built-in primitive library.
-                                </p>
-                            </li>
-
-                            <li>
-                                <h4>Design & prototype</h4>
-                                <p>Apply materials, lighting, and interactions. Preview at any viewport — XR, mobile, or
-                                    desktop.</p>
-                            </li>
-
-                            <li>
-                                <h4>Collaborate in real-time</h4>
-                                <p>Invite teammates with a link. Comment on geometry, leave annotations, and iterate
-                                    together.</p>
-                            </li>
-
-                            <li>
-                                <h4>Export & ship</h4>
-                                <p>Publish to a live URL, export optimized WebGL, or hand off specs to engineering
-                                    directly.</p>
-                            </li>
-
-                        </ol>
-                    </div>
+            <div class="workflow-page">
+                <div class="workflow-tab">
+                    <h6 class="workflow-title">HOW IT WORKS</h6>
+                    <h2 class="workflow-heading">From concept to prototype in four steps</h2>
+                    <p>Forma removes the gap between ideation and execution. No handoff, no lost context, no
+                        separate tools — one continuous workflow for the whole team.</p>
                 </div>
-            
+
+                <div class="workflow-content">
+                    <ol class="padded-list">
+                        <li>
+                            <h4>Import or start fresh</h4>
+                            <p>Bring in CAD files, glTF models, or begin with Forma's built-in primitive library.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>Design & prototype</h4>
+                            <p>Apply materials, lighting, and interactions. Preview at any viewport — XR, mobile, or
+                                desktop.</p>
+                        </li>
+
+                        <li>
+                            <h4>Collaborate in real-time</h4>
+                            <p>Invite teammates with a link. Comment on geometry, leave annotations, and iterate
+                                together.</p>
+                        </li>
+
+                        <li>
+                            <h4>Export & ship</h4>
+                            <p>Publish to a live URL, export optimized WebGL, or hand off specs to engineering
+                                directly.</p>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+
 
             <section class="testimonials" id="testimonials"></section>
-                <div class="testimonials-header">
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-
-                    <h3 class="testimonials-heading">Loved by spatial designers</h3>
+            <div class="testimonials-header">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                 </div>
 
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">"Forma cut our XR prototyping cycle from three weeks to three days.
-                            The real-time multiplayer alone is worth the switch."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar" id="author-AV" style="background-color: #6d4aad67;">AV</div>
-                            <div class="author-info">
-                                <h4>Adriana Voss</h4>
-                                <span>Head of Design, Veritas Labs</span>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="testimonials-heading">Loved by spatial designers</h3>
+            </div>
 
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">"I've never felt this close to the material when designing spatial UI. 
-                            It's the missing tool between Blender and Figma."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar" id="author-MC" style="background-color: #2d7a6e67;">MC</div>
-                            <div class="author-info">
-                                <h4>Marcus Chen</h4>
-                                <span>Spatial Designer, Horizon Studio</span>
-                            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Forma cut our XR prototyping cycle from three weeks to three days.
+                        The real-time multiplayer alone is worth the switch."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="author-AV" style="background-color: #6d4aad67;">AV</div>
+                        <div class="author-info">
+                            <h4>Adriana Voss</h4>
+                            <span>Head of Design, Veritas Labs</span>
                         </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <p class="testimonial-quote">"We replaced three tools with Forma. 
-                            Handoff to engineering is seamless — they get specs, not screenshots."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar" id="author-SO" style="background-color: #8a6a1a67;">SO</div>
-                            <div class="author-info">
-                                <h4>Selin Öztürk</h4>
-                                <span>VP Product, Arkode</span>
-                            </div>
-                        </div>    
                     </div>
                 </div>
 
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I've never felt this close to the material when designing spatial UI.
+                        It's the missing tool between Blender and Figma."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="author-MC" style="background-color: #2d7a6e67;">MC</div>
+                        <div class="author-info">
+                            <h4>Marcus Chen</h4>
+                            <span>Spatial Designer, Horizon Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"We replaced three tools with Forma.
+                        Handoff to engineering is seamless — they get specs, not screenshots."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="author-SO" style="background-color: #8a6a1a67;">SO</div>
+                        <div class="author-info">
+                            <h4>Selin Öztürk</h4>
+                            <span>VP Product, Arkode</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="pricing" id="pricing">
+                <div class="pricing-page">
+                    <div class="pricing-tab">
+                        <h6 class="pricing-title">PRICING</h6>
+                        <h2 class="pricing-heading">Simple, transparent pricing</h2>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div>
+                            <p class="pricing-name">SOLO</p>
+                            <div class="pricing-price"><small>$</small><span>0</span><small>/mo</small></div>
+                            <div class="pricing-description">For individuals exploring spatial design.</div>
+                            <ul class="pricing-list">
+                                <li>3 active projects</li>
+                                <li>1 GB asset storage</li>
+                                <li>Community support</li>
+                                <li>WebGL export</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card-highlight">
+                        <div class="most-popular">Most popular</div>
+                        <div>
+                            <p class="pricing-name">STUDIO</p>
+                            <div class="pricing-price"><small>$</small><span>49</span><small>/mo</small></div>
+                            <div class="pricing-description">For growing teams shipping spatial products.</div>
+                            <ul class="pricing-list">
+                                <li>Unlimited projects</li>
+                                <li>50 GB asset storage</li>
+                                <li>Multiplayer (up to 10)</li>
+                                <li>Physics engine</li>
+                                <li>Priority support</li>
+                                <li>Custom domain publish</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="#">Start free trial</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div>
+                            <p class="pricing-name">ENTERPRISE</p>
+                            <div class="pricing-price"><span>Custom</span></div>
+                            <div class="pricing-description">For large orgs with advanced security needs.</div>
+                            <ul class="pricing-list">
+                                <li>Everything in Studio</li>
+                                <li>SSO & SCIM</li>
+                                <li>Dedicated SLA</li>
+                                <li>On-prem option</li>
+                                <li>Custom integrations</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="#">Talk to sales</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="join-page">
+                <div class="join-heading">
+                    <h2>Ready to design in <span>three dimensions?</span></h2>
+                    <h6>Join 12,000 designers who've already moved to Forma. Free to start, no credit card required.</h6>
+                </div>
+                <div class="bottom-buttons">
+                    <a href="#" id="bottom-get-started">Get started for free <i class="fa-solid fa-arrow-up"></i></a>
+                    <a href="#" id="bottom-schedule-demo">Schedule a demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="#" class="logo">FORMA</a>
+
+        <ol class="footer-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Status</a></li>
+        </ol>
+
+        <div class="footer-copyright">
+            <p>© 2026 Forma, Inc.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.querySelector('header');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuIcon = menuToggle.querySelector('i');
+        const navLinks = document.querySelectorAll('#primary-navigation a');
+
+        function closeMenu() {
+            header.classList.remove('nav-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        }
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = header.classList.toggle('nav-open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+            menuIcon.classList.toggle('fa-bars', !isOpen);
+            menuIcon.classList.toggle('fa-xmark', isOpen);
+        });
+
+        navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+    </script>
 </body>
 
 </html>
