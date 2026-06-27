@@ -1,5 +1,7 @@
 # FORMA – Responsive One-Page Website
 
+![FORMA home page](public/forma-home-page.png)
+
 A responsive one-page website built with **HTML**, **CSS**, and **JavaScript**, inspired by a **Figma AI-generated mockup**. This project was created as a front-end development exercise to strengthen my ability to translate a design into clean, responsive code while improving my understanding of modern CSS layout techniques.
 
 **Live Demo:** https://forma-web-layout.vercel.app
